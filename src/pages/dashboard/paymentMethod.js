@@ -265,7 +265,7 @@ const Page = () => {
                   }}
                 >
                   <Button
-                    fullWidth
+                    
                     size='large'
                     variant='contained'
                     onClick={handleSubmit}

@@ -260,7 +260,7 @@ const Page = () => {
                 >
                   <Button
                     size="large"
-                    fullWidth
+                    // fullWidth
                     type="submit"
                     sx={{ minWidth: "200px" }}
                     variant="contained"

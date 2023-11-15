@@ -22,6 +22,10 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from "react-i18next";
 import { tokens } from "src/locales/tokens";
 
+// import { overview } from 'public/assets/images/overview.png';
+// import { overview } from '../../../public/assets/images/overview.png';
+
+
 const now = new Date()
 
 const Page = () => {
@@ -39,7 +43,7 @@ const Page = () => {
   const { t } = useTranslation();
 
   usePageView()
-  
+
   useEffect(() => {
     const getData = async () => {
       try {
@@ -80,7 +84,7 @@ const Page = () => {
           py: 8
         }}
       >
-        <Container maxWidth={settings.stretch ? false : 'xl'}>
+        <Container id='homepage' maxWidth={settings.stretch ? false : 'xl'}>
           <Grid
             container
             disableEqualOverflow
@@ -92,7 +96,9 @@ const Page = () => {
             <Grid xs={12}>
               <Stack direction='row' justifyContent='space-between' spacing={4}>
                 <div>
-                  <Typography variant='h4'>{t(tokens.nav.overview)}</Typography>
+                  <Typography variant='h4' >{t(tokens.nav.overview)}</Typography>
+                  <img src="/assets/images/overview1.png" width="160" alt="banner-image"></img>
+                  {/* <Image src={overview} alt="banner-image" /> */}
                 </div>
               </Stack>
             </Grid>
